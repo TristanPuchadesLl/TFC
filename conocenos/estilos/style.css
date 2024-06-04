@@ -1,0 +1,94 @@
+main{
+    background-color: #C1C7E7;
+}
+/* Estilos para el contenedor principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilos para la sección de información */
+.about-section {
+    flex: 1;
+    width: 50%; /* Ancho del 50% */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    height: 75vh;
+}
+
+.about-section h1 {
+    font-size: 2.5em;
+    color: #1a73e8;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-section h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.about-section p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    margin-bottom: 15px;
+}
+
+/* Estilos para la sección del mapa */
+.map-section {
+    flex: 1;
+    width: 50%; /* Ancho del 50% */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.map-section h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+}
+
+.map-container iframe {
+    border-radius: 10px;
+}
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 1025px) {
+    .container {
+        flex-direction: column;
+    }
+    .about-section, .map-section{
+        width: auto;
+    }
+    .about-section h1 {
+        font-size: 2em;
+    }
+
+    .about-section h2 {
+        font-size: 1.5em;
+    }
+
+    .about-section p {
+        font-size: 1em;
+    }
+}
